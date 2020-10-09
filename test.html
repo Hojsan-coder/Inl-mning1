@@ -1,89 +1,96 @@
-  <!DOCTYPE html>
-  <html>
-  <head>
-  <h1>Det här är en undersökning </h1>	
+<!DOCTYPE html>
+<html>
+<head>
+<title>Detta är en undersökning</title>
+          
+    
 
+ <body>
+ <h1>Formulär</h1> 
 
-  <div>
-  <b>Skriv in ditt namn:</b><br>
+  
+  
   <form action="/action_page.php">
-  <label for="holename"></label>
-  <input type="text" name="holename" maxlength="20" size="35">
+  <label for="name"><Strong>Namn<Strong></label>
+  <input type="text" name="name" id="name" maxlength="20" size="35">
   <br>
-  </form>
-  </div>
+  
+  
   <br>
    
-  <div>
-  <form action="/action_page.php">
+  
+  
   <label for="describe">Berätta om dig själv:</label><br>
-  <textarea  name="describe" rows="4" cols="30"style="background-color:green;"></textarea>
+  <textarea  name="describe" id="describe" rows="4" cols="30"style="background-color:green;"></textarea>
   <br>
 
-  </form>
+  
   <br>
   <br>
-  </div>
+  
 
 
 
-  <div>
-  <em>Tränar du någon sport?</em><br><br>
-  <form action="/action_page.php">
-  <label for="yes_no_radio">Välj:</label>
-  <input type="radio" name="yes_no" checked>Yes</input>
-  <input type="radio" name="yes_no">No</input>
+  
+  <label></label><em>Tränar du någon sport?</label></em><br><br>
+  
+  
+  <input type="radio" name="sport" id="sportja" value="ja" ></input>
+  <label for="radioja">ja:</label>
+
+  <input type="radio" name="sport" id="sportnej" value="nej" ></input>
+  <label for="radioja">nej:</label>
+  
   <br>
-  </form>
-  </div>
+  
+  
   <br>
   <br>
 
 
-  <div>
+  
   <strong><em>På vilket sätt föredrar du och läsa på?</em></strong><br><br>
-  <form action="/action_page.php">
-  <input type="checkbox" name="books">
+  
+  <input type="checkbox" name="books" id="books">
   <label for="books">Böcker</label><br>
-  <input type="checkbox" name="newpapper">
+  <input type="checkbox" name="newpapper" id="newpapper">
   <label for="newpapper"> Tidning</label><br>
-  <input type="checkbox" name="online">
+  <input type="checkbox" name="online" id="online">
   <label for="online">Läsa online</label>
   <br>
-  </form>
+  
   <br>
   <br>
-  </div>
   
-  
-  <div>
-  <form action="/action_page.php">
-  <label for="movies">Välj en film:</label>
-  <select name="movies">
 
-  <option value="No_choice">Ingen val</option>
+
+  
+  
+  
+  
+  <label for="movies">Välj en film:</label>
+  <select name="movies" id="movies">
+
+  <option selected disabled hidden style="display: none;"></option>
   <option value="Action">Action</option>
   <option value="Romantic">Romantik</option>
   <option value="Comedy">Komedi</option>
   <option value="Drama">Drama</option>
   <option value="Horror">Skräck</option>
   </select>
-  </div>
+  
+  
+  <br>
+  <br>
+  
+  <label for="skicka in">klicka här föratt skicka in</label>
+  <br>
+  <input type="submit" name="skicka-in" value="skicka in">
+  
   </form>
-  <br>
-  <br>
-  <div>
-  <form action="/action_page.php">
-  <input type="submit" value="Submit">
 
-  </div>
+  
   </head>
-
-
-
-
-  <body>
-
 
 
 
